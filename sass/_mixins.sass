@@ -1,0 +1,30 @@
+=cover
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 50% 50%
+	
+//simple gradient
+=g($color1, $color2)
+	+background-image(linear-gradient($color1, $color2))
+
+=gh($color1, $color2)
+	background: linear-gradient(left, $color1 0%, $color1 50%, $color2 50%, $color2 100%)
+
+=hextorgba($color, $opacity)
+	background: rgba($color, $opacity)
+
+=mobileold
+	@media all and (max-width: 480px)
+		@content
+=mobile
+	@media all and (max-width: 575px)
+		@content
+=tablet
+	@media all and (max-width: 768px)
+		@content
+=netbook
+	@media all and (max-width: 991px)
+		@content
+=laptop
+	@media all and (max-width: 1199px)
+		@content
