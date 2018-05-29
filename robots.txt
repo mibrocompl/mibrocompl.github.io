@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /index.html
+Host: mibro.com.pl
+Sitemap: http://mibro.com.pl/sitemap.xml
